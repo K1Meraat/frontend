@@ -1,0 +1,83 @@
+html {
+	scroll-padding-top: 250px;
+}
+
+body{
+  background-color: #ffffff;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  padding-top: 170px;
+
+}
+
+#header {	 
+	background-color: #bce09e;	
+}
+
+.navbar {
+	position:fixed;
+	top: 0;
+	width: 100%;
+
+}
+.navbar-brand a:hover, .navbar-brand a:link {
+	text-decoration: none;
+	padding-bottom: 4vw;
+}
+.navbar-brand h1{
+	font-family: 'Noto Nastaliq Urdu', serif;
+	font-size:calc(100% + 2vw);
+	text-shadow: 1px 1px #222;
+}
+
+
+h1{
+	color: #09304b;
+}
+
+p{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.navbar-light .navbar-toggler{
+    border-color: rgba(255,255,0,0);
+		color: rgba(255,0,0,0);
+}
+
+.nav-link{
+	color: rgb(0, 0, 0);
+}
+
+.navbar-light .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2894, 124, 62, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2885, 124, 62, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btn:focus{
+	/* outline: none !important;  */
+	box-shadow: none;
+}
+
+ol.overview {
+	margin-top: 5vw;
+}
+
+div.col-lg-4{
+	margin-left: 4em;
+	margin-top: 2em;
+}
+
+div.container{
+	box-sizing: border-box;;
+}
+
+
+div.kholase{
+	margin-top: 2em;
+	margin-right: 2em;
+	margin: 0px;
+}
