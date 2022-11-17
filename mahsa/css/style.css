@@ -12,6 +12,7 @@ body{
 
 #header {	 
 	background-color: #bce09e;	
+	z-index: 1;
 }
 
 .navbar {
@@ -56,9 +57,7 @@ h1{
 	color: #09304b;
 }
 
-.card {
-	z-index: -10;
-}
+
 
 div.meat{
 	margin-left: 4em;
@@ -67,6 +66,10 @@ div.meat{
 
 div.container{
 	box-sizing: border-box;;
+}
+
+div.overview{
+	margin-bottom: 2em;
 }
 
 div.kholase{
