@@ -58,12 +58,6 @@ h1{
 }
 
 
-
-div.meat{
-	margin-left: 4em;
-	margin-top: 3em;
-}
-
 div.container{
 	box-sizing: border-box;;
 }
@@ -71,6 +65,17 @@ div.container{
 div.overview{
 	margin-bottom: 2em;
 }
+
+div.meat{
+	margin-left: 4em;
+	margin-top: 3em;
+}	
+
+
+/* reserve space for lazyload */
+div.tweet{
+	aspect-ratio: 1 / 2;
+  }
 
 div.kholase{
 	margin-top: 2em;
