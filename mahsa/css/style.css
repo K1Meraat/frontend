@@ -12,7 +12,7 @@ body{
 
 #header {	 
 	background-color: #bce09e;	
-	z-index: 1;
+	z-index: 10;
 }
 
 .navbar {
@@ -48,13 +48,34 @@ body{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2885, 124, 62, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.btn:focus{
+.btn:focus {
 	/* outline: none !important;  */
 	box-shadow: none;
 }
 
-h1{
-	color: #09304b;
+button.btn {
+	padding: 0%;
+}
+
+.accordion-button::after {
+	margin-left: 0;
+} 
+
+.accordion-button:focus{
+	box-shadow:none;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: white;
+	color: green;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23008000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");    transform: rotate(-180deg);
+}
+
+.accordion-button:active {
+	background-color: #bce09e;
 }
 
 
@@ -69,16 +90,19 @@ div.overview{
 div.meat{
 	margin-left: 4em;
 	margin-top: 3em;
-}	
+}
+
+/* .kholase > ul > li {
+	margin-top: 1em;
+} */
 
 
 /* reserve space for lazyload */
 div.tweet{
-	aspect-ratio: 1 / 2;
+	aspect-ratio: 1 / 1.5;
   }
 
-div.kholase{
+div.kholase.col-7{
 	margin-top: 2em;
 	margin-right: 2em;
-	margin: 0px;
 }
