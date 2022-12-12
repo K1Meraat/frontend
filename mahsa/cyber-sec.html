@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Arabic&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   <script async src="//www.instagram.com/embed.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </head>
 <body>
@@ -21,27 +22,52 @@
       <div class="container-fluid flex-md-column"> 
         <div class="navbar-brand">
           
-          <a href="index.html" title="صفحه اصلی " class="d-flex"> 
+          <a href="index.html" title="main page" class="d-flex"> 
             <div>
-              <span><h1 style="color: #09304b;"> هنر تظاهرات خیابانی  </h1></span> 
+              <span><h1 style="color: #09304b;"> هنر تظاهرات خیابانی  </h1></span>
            </div>
           </a>
           
        </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-        <div class="navbar-nav">
-          <a class="nav-link text-center" href="index.html">صفحه اصلی</a>
-          <a class="nav-link text-center" href="place.html">مکان تظاهرات</a>
-          <a class="nav-link text-center" href="#">داخل خیابان</a>
-          <a class="nav-link text-center" href="suppression.html">شیوه سرکوب</a>
-          <a class="nav-link text-center" href="medic.html">کمک های پزشکی</a>
-          <a class="nav-link text-center active" href="cyber-sec.html">امنیت سایبری</a>
-
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-center" href="index.html">تظاهرات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="medic.html">کمک های پزشکی </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center active" href="cyber-sec.html">امنیت سایبری</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="arrest.html">دستگیری</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a class="nav-link text-center" href="fear.html">ترس</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a class="nav-link text-center" href="leader.html">لیدری تجمعات</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a class="nav-link text-center" href="fight.html">داخل خیابان</a>
+          </li>
+          <li class="nav-item dropdown d-none d-md-block">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              سایر 
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="nav-link text-center" href="fear.html">ترس</a></li>
+              <li><a class="nav-link text-center" href="leader.html">لیدری تجمعات</a></li>
+              <li><a class="nav-link text-center" href="fight.html">داخل خیابان</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </div>
+      </div>
   </nav>
 </header>
 <div class="container">
@@ -53,7 +79,7 @@
           <ol>
             <li><a href="#track">جلوگیری از ردیابی </a></li>
             <li><a href="#propaganda">مقابله با پروپاگاندا</a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#insta">اینستاگرام</a></li>
             <li><a href="#"></a></li>
             <li><a href="#wanted">اگر لیدر یا تحت تعقیب هستید</a></li>
           </ol>
@@ -120,7 +146,7 @@
          دستگاه مشترک مورد نظر در دسترس نمیباشد یعنی دکل مخابراتی نتوانسته هیچ ارتباطی با موبایل شما برقرار کند چون موبایل شما هیچ سیگنالی ارسال نکرده است. دقیقا آن چیزی که ما میخواهیم!! دقیقا به همین خاطر است که در هواپیما از شما درخواست میشود موبایل را روی حالت flight mode قرار دهید تا از ارسال سیگنال از سوی موبایل شما و اختلال در امواج رادیویی هواپیما  جلوگیری به عمل آید.
             </div>
       
-            <button class="btn btn-link d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#flight" aria-expanded="false" aria-controls="flight">نمی توانم</button> 
+            <!-- <button class="btn btn-link d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#flight" aria-expanded="false" aria-controls="flight">نمی توانم</button> 
             موبایل را روی flight mode قرار دهم.</li>
             <div class="collapse d-xl-none" id="flight">
               همه گوشی های هوشمند قابلیت flight mode را دارند. اگر نمیدانید چطور flight mode را فعال کنید, از کسی کمک بخواهید.
@@ -128,7 +154,7 @@
               با این حال شما میتوانید در حالت روشن سیمکارت را از گوشی خارج کنید و بعد گوشی را خاموش کنید, تا گوشی از مدار خارج شود. 
               <br>
               برای قطع سیگنال موبایل همچنین می توانید موبایل را در فویل آلومینیومی بپیچید یا آن را داخل کیف های مخصوص قطع سیگنال بگذارید. این کیف ها در بازار قابل تهیه هستند.
-            </div>
+            </div> -->
               <li>توصیه میشود از دو موبایل استفاده کنید. یکی برای فعالیت های مجازی و دیگری برای تظاهرات.
                 در صورتی که از دو موبایل استفاده میکنید,
                 <button class="btn btn-link d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#two_phones" aria-expanded="false" aria-controls="flight">اینجا</button>
@@ -244,7 +270,7 @@
     </ul>
 </div>
 
-
+<!-- 
 <div class="meat col-lg-4 d-inline-flex">
   <div class="tweet">
     <h5 id="track" class="mb-4">جلوگیری از ردیابی </h5>
@@ -358,7 +384,7 @@
       <li></li>
       <li></li>
       </ul>
-    </div>
+    </div> -->
 
 
     <div class="meat col-lg-4 d-inline-flex">
@@ -366,9 +392,8 @@
       <h5 id="wanted">اگر لیدر یا تحت تعقیب هستید</h5>
       
       
-      <blockquote class="twitter-tweet"><p lang="fa" dir="rtl">نحوه مراجعه به بیمارستان ها: <br>شامل انیمیشن و متن به صورت رشتو<br>۱- در صورت تماس با اورژانس از عبارات تیر خوردن، ساچمه، اعتراضات و ... استفاده نکنید. کلی گویی کنید و دروغ مصلحتی بگویید مثلن زمین خورده یا شیشه شکسته و به فرد برخورد کرده 
-        <a href="https://t.co/r7ontmydnE">pic.twitter.com/r7ontmydnE</a></p>&mdash; امدادگران انقلاب (@emdadgarane401) 
-        <a href="https://twitter.com/emdadgarane401/status/1586397012022657024?ref_src=twsrc%5Etfw">October 29, 2022</a>
+      <blockquote>
+        
       </blockquote> 
       </div>
     </div>
